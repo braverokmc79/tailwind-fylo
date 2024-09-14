@@ -25,7 +25,7 @@
       document.documentElement.classList.remove('dark')
     }
   </script>
-  <script src="js/script.js" defer></script> 
+  <script src="js/script.js" defer></script>
   <title>파일로 웹사이트</title>
 </head>
 
@@ -34,80 +34,179 @@
 
   <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
     <!-- 동적 로고 -->
-   <div
-     class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"
-   ></div>
+    <div
+      class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10">
+    </div>
     <!-- 메뉴 -->
-   <div
-     class="flex items-center 
-     justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10"
-   >
-     <a href="#features" class="hover:text-accentCyan">기능</a>
-     <a href="#testimonials" class="hover:text-accentCyan">추천사</a>
+    <div class="flex items-center 
+     justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
+      <a href="#features" class="hover:text-accentCyan">기능</a>
+      <a href="#testimonials" class="hover:text-accentCyan">추천사</a>
 
-    <!-- 다크/라이트 모드 버튼 -->
-     <button
-       id="theme-toggle"
-       class="text-gray-500 dark:text-gray-400 hover:bg-gray-100
+      <!-- 다크/라이트 모드 버튼 -->
+      <button id="theme-toggle" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100
         dark:hover:bg-gray-700 focus:outline-none focus:ring-4
          focus:ring-gray-200 dark:focus:ring-gray-700 
-         rounded-lg text-sm p-2 "
-     >
-       <!-- 다크 모드 아이콘 -->
-       <svg
-         id="theme-toggle-dark-icon"
-         class="w-5 h-5 hidden"
-         fill="currentColor"
-         viewBox="0 0 20 20"
-         xmlns="http://www.w3.org/2000/svg"
-       >
-         <path
-           d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-         ></path>
-       </svg>
-      <!-- 라이트 모드 아이콘 -->
-       <svg
-         id="theme-toggle-light-icon"
-         class="w-5 h-5 hidden"
-         fill="currentColor"
-         viewBox="0 0 20 20"
-         xmlns="http://www.w3.org/2000/svg"
-       >
-         <path
-           d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-           fill-rule="evenodd"
-           clip-rule="evenodd"
-         ></path>
-       </svg>
-     </button>
-   </div>
- </header>
+         rounded-lg text-sm p-2 ">
+        <!-- 다크 모드 아이콘 -->
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <!-- 라이트 모드 아이콘 -->
+        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
 
 
- <!-- Hero Section -->
-<section id="hero" class="bg-curvy-light-mode 
-dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
+  <!-- Hero Section -->
+  <section id="hero" class="bg-curvy-light-mode  dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
 
-<div class="container mx-auto px-6 text-center md:pt-20 pb-52">
-<img src="images/illustration-intro.png" alt=""
-  class="mx-auto "
->
-<h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
-  모든 파일을 안전하게 저장하고 어디서나 접근하세요
-</h1>
+    <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
+      <img src="images/illustration-intro.png" alt="" class="mx-auto ">
+      <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
+        모든 파일을 안전하게 저장하고 어디서나 접근하세요
+      </h1>
 
-<p class="max-w-xs mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
-  Fylo는 모든 중요한 파일을 하나의 안전한 위치에 저장합니다. 
-  언제 어디서나 파일에 접근하고, 친구, 가족 및 동료와 공유하고 협업하세요.
-</p>
+      <p class="max-w-xs mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+        Fylo는 모든 중요한 파일을 하나의 안전한 위치에 저장합니다.
+        언제 어디서나 파일에 접근하고, 친구, 가족 및 동료와 공유하고 협업하세요.
+      </p>
 
-<button class="p-3 rounded-full w-52 bg-accentCyan hover:opacity-80 duration-200 hover:scale-95
+      <button class="p-3 rounded-full w-52 bg-accentCyan hover:opacity-80 duration-200 hover:scale-95
 ">
-시작하기
-</button>
+        시작하기
+      </button>
 
-</div>
-</section>  
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- 기능 섹션 -->
+<section id="features" class="pt-12 bg-gray-50 
+    dark:bg-darkBlue1">
+
+  <div class="container mx-auto px-6 pb-32">
+    <div class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0">
+       
+      <!-- 항목1 -->
+      <div class="flex flex-col items-center space-y-2 md:w-1/2">
+          <div class="flex items-center justify-center h-24 mb-6">
+            <img src="images/icon-access-anywhere.svg" alt="">
+          </div>
+          <h3 class="text-xl font-bold">
+            어디서나 파일에 접근하세요
+          </h3>
+          <p class="max-w-md">
+            스마트폰, 태블릿 또는 컴퓨터를 통해 계정에 접근할 수 있는
+            기능으로 파일이 어디에서나 함께합니다.
+          </p>        
+      </div>
+
+       <!-- 항목2 -->
+      <div class="flex flex-col items-center space-y-2 md:w-1/2">
+        <div class="flex items-center justify-center h-24 mb-6">
+          <img src="images/icon-security.svg" alt="">
+        </div>
+        <h3 class="text-xl font-bold">
+          신뢰할 수 있는 보안
+        </h3>
+        <p class="max-w-md">
+          2단계 인증과 사용자 제어 암호화는 파일을 보호하기 위해 제공하는
+          보안 기능 중 일부에 불과합니다.
+        </p>     
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 pb-32">
+
+    <div class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0">    
+      <!-- 항목3 -->
+      <div class="flex flex-col items-center space-y-2 md:w-1/2">
+        <div class="flex items-center justify-center h-24 mb-6">
+          <img src="images/icon-collaboration.svg" alt="">
+        </div>
+        <h3 class="text-xl font-bold">
+          어디서나 협업하세요
+        </h3>
+        <p class="max-w-md">
+          여러 디바이스에서 파일을 공유하고 협업할 수 있는 기능으로
+          더 나은 팀워크를 지원합니다.
+        </p>     
+      </div>
+
+
+
+     <!-- 항목4 -->
+      <div class="flex flex-col items-center space-y-2 md:w-1/2">
+        <div class="flex items-center justify-center h-24 mb-6">
+          <img src="images/icon-any-file.svg" alt="">
+        </div>
+        <h3 class="text-xl font-bold">
+          모든 파일을 지원합니다
+        </h3>
+        <p class="max-w-md">
+          다양한 형식의 파일을 지원하며, 어떤 파일도 손쉽게 업로드하고
+          관리할 수 있습니다.
+        </p>
+     
+     </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+ <!-- 생산성 섹션 -->
+ <section id="productive" class="bg-white dark:bg-darkBlue">
+
+  <div class="container mx-auto flex flex-col px-6 pt-24 pb-32 md:flex-row items-center">
+
+    <div class="md:w-1/2 text-center ">
+      <img src="images/illustration-stay-productive.png" alt="">
+    </div>
+
+    <div class="flex flex-col space-y-5 mx-auto  md:w-1/2  ">
+      <h2 class="max-w-xl  text-xl font-bold md:text-4xl md:max-w-md">어디서나 생산성을 유지하세요</h2>
+      <p class="text-md md:text-lg">
+        파일 접근 시 위치가 문제되지 않도록 하세요. Fylo가 파일 저장
+        요구 사항을 모두 해결해 드립니다.
+      </p>
+      <p class="text-md md:text-lg">
+        파일과 폴더를 친구, 가족, 동료와 안전하게 공유하여 실시간
+          협업을 할 수 있습니다. 이메일 첨부 파일은 필요 없습니다.
+      </p>
+     
+      <div class="block mt-4">
+        <a href="#" class="border-b border-accentCyan text-accentCyan">
+          Fylo의 작동 방식 보기
+          <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
+        </a>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 
