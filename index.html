@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <script>
       // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
@@ -36,7 +37,8 @@
       ></div>
        <!-- 메뉴 -->
       <div
-        class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10"
+        class="flex items-center 
+        justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10"
       >
         <a href="#features" class="hover:text-accentCyan">기능</a>
         <a href="#testimonials" class="hover:text-accentCyan">추천사</a>
@@ -44,7 +46,10 @@
        <!-- 다크/라이트 모드 버튼 -->
         <button
           id="theme-toggle"
-          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 5"
+          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100
+           dark:hover:bg-gray-700 focus:outline-none focus:ring-4
+            focus:ring-gray-200 dark:focus:ring-gray-700 
+            rounded-lg text-sm p-2 "
         >
           <!-- 다크 모드 아이콘 -->
           <svg
